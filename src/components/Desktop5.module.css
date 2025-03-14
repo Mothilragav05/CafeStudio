@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+/* Background container */
+.desktop5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Slider container with full height */
+.sliderContainer {
+  width: 100%;
+  max-width: 1540px;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Navbar styles */
+/* Navbar styles */
+.navbar {
+  position: fixed; /* Make navbar stay at the top */
+  top: 10px;
+  left: 0;
+  width: 90%;
+  height: 70px;
+  margin-left: 45px;
+  border-radius: 10px;
+  background-color:rgba(56, 65, 56, 0.8); /* Dark theme like ChatGPT */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000; /* Ensure it stays above other elements */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  font-family:  Azonix, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+
+/* Navigation Links */
+.navLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual link styles */
+.navLink {
+  color: #fff;
+  font-family:  "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #ffcc00;
+}
+
+/* Search button */
+.searchButton {
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 40px;
+  padding: 4px 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.searchButton:hover {
+  background-color: #bfbfbf;
+}
+
+
+.searchIcon {
+  aspect-ratio: 1;
+  width: 24px;
+  object-fit: contain;
+  object-position: center;
+}
+.textOverlay {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: white;
+  text-align: left;
+}
+
+.header {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  margin: 0;
+}
+.highlight {
+  color: #ffcc00;
+}
+.subheader {
+  font-size: 1.2rem;
+}
+
+.searchBox {
+  display: flex;
+  margin-top: 20px;
+}
+
+.searchInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.orderButton {
+  padding: 10px 20px;
+  background-color: #FF3E30;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.menu {
+  background-color:#d4a373;
+  text-align: left; /* Aligns the entire menu section to the left */
+  padding: 50px;
+  margin-left: 10px; /* Moves the menu section to the left */
+  width: 100%; /* Adjust width as needed */
+}
+
+.menuHeader {
+  font-family:"Playfair Display", serif;
+  font-size:48px;
+  margin-bottom: 10px;
+}
+
+.menuSubtitle {
+  font-family:  "Lora", serif;
+
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.menuButtons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.menuButton {
+  font-weight: bold;
+  font-style: italic;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.menuButton:hover {
+  background: #000;
+  color: white;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.menuItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menuImage {
+  width: 300px; /* Adjust width based on your container */
+  height: 300px; /* Keep aspect ratio */
+  object-fit: cover; /* Ensures it fills the box without distortion */
+  border-radius: 10px; /* Keeps the rounded corners */
+  display: block; /* Removes any extra spacing below the image */
+}
+
+.itemDetails {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.price {
+  font-weight: bold;
+  color: green;
+}
+
+.aboutUs {
+  width:100%;
+  padding: 40px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.header {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactDetails {
+  margin-bottom: 30px;
+}
+
+.contactDetails h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.socialMedia {
+  margin-top: 20px;
+}
+
+.socialMedia h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.socialLink {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff; /* Bootstrap primary color */
+  font-weight: bold;
+}
+
+.socialLink:hover {
+  text-decoration: underline;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items */
+    height: auto; /* Allow height to expand naturally */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .logo {
+    font-size: 30px; /* Adjust logo size */
+  }
+
+  .navLink {
+    font-size: 20px; /* Smaller font size for links */
+  }
+
+  .searchButton {
+    padding: 5px 20px; /* Adjust padding on smaller screens */
+  }
+}
+
+/* =================== RESPONSIVE DESIGN =================== */
+
+/* Medium screens (800px and below) */
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column; /* Stack items vertically */
+      align-items: left; /* Center items */
+      height: 50px;
+      padding: 10px 20px; /* Add space */
+  }
+
+  .logo {
+      margin: 0 auto; /* Center the logo */
+      text-align: center;
+  }
+
+  .navLinks {
+      position: relative;
+      bottom: 10px;
+      justify-content: center; /* Center nav links */
+      width: 100%;
+      gap: 15px;
+  }
+
+  .searchButton {
+      margin: 10px auto 0; /* Center the search button */
+  }
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%; /* Ensure slide takes full height */
+}
+
+.slideImage {
+  width: 100%;
+  height: 100%; /* Full height of the slide */
+  object-fit: cover; /* Cover the entire area without distortion */
+}
+
+.slideText {
+  position: absolute;
+  top: 50%; /* Position at 50% from the top */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center it exactly */
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  z-index: 20; /* Ensure text is above the image */
+}
+
+/* Pagination styles */
+.swiper-pagination {
+  bottom: 20px; /* Position the dots above the bottom */
+  z-index: 20; /* Ensure dots are above other elements */
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.7); /* White dots with some transparency */
+}
+
+.swiper-pagination-bullet-active {
+  background: #e01515; /* Active dot color */
+}
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 24px; /* Adjust size */
+  background: none; /* No background */
+  border: none; /* No border */
+  color: white; /* White color */
+  cursor: pointer;
+}
+
+/* Show the hamburger button on small screens */
+@media (max-width: 900px) {
+  
+  .hamburger {
+    display: block; /* Show the hamburger */
+  }
+
+  .navLinks {
+    display: none; /* Hide nav links by default */
+    flex-direction: column; /* Stack vertically */
+    position: absolute; /* Position them absolutely */
+    top: 70px; /* Position below the navbar */
+    left: 350px; /* Align to the left */
+    /* Semi-transparent background */
+    border-radius: 10px;
+    width: 90%; /* Full width of navbar */
+    z-index: 9; /* Ensure visibility */
+    padding: 10px; /* Add padding */
+  }
+
+  .navLinks.show {
+    display: flex; /* Show nav links when menu is open */
+  }
+
+  .navLink {
+    padding: 10px 0; /* Add some padding */
+    text-align: center; /* Center link text */
+  }
+}

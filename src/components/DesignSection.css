@@ -1,0 +1,35 @@
+.design-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .designer-card {
+    border: 2px solid #000; /* Adjust or use your desired color */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9; /* Light background for cards */
+  }
+  
+  .designer-info h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .designer-info p {
+    margin: 5px 0;
+  }
